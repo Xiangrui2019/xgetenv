@@ -5,10 +5,6 @@ import (
 	"os"
 )
 
-func init() {
-	log.Println("Miku fans Yes! AMD Yes!")
-}
-
 func XGetenv(key string, default_value ...string) string {
 	if r := os.Getenv(key); r != "" {
 		return r
